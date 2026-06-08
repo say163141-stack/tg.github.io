@@ -463,11 +463,7 @@
 </div>
 </div>
 </footer>
-<script>
-    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
-</script>
+
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -479,6 +475,30 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('#mobile-menu a').forEach(a=>{
     a.addEventListener('click', ()=> menu && menu.classList.add('hidden'));
   });
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menu = document.getElementById('mobile-menu');
+  const buttons = [
+    document.getElementById('mobile-menu-btn'),
+    document.getElementById('mobile-menu-toggle')
+  ].filter(Boolean);
+
+  buttons.forEach(btn => {
+    btn.onclick = function(e){
+      e.preventDefault();
+      if(menu){ menu.classList.toggle('hidden'); }
+    };
+  });
+
+  if(menu){
+    menu.querySelectorAll('a').forEach(a=>{
+      a.addEventListener('click', ()=>menu.classList.add('hidden'));
+    });
+  }
 });
 </script>
 

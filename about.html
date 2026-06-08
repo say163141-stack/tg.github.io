@@ -278,4 +278,28 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menu = document.getElementById('mobile-menu');
+  const buttons = [
+    document.getElementById('mobile-menu-btn'),
+    document.getElementById('mobile-menu-toggle')
+  ].filter(Boolean);
+
+  buttons.forEach(btn => {
+    btn.onclick = function(e){
+      e.preventDefault();
+      if(menu){ menu.classList.toggle('hidden'); }
+    };
+  });
+
+  if(menu){
+    menu.querySelectorAll('a').forEach(a=>{
+      a.addEventListener('click', ()=>menu.classList.add('hidden'));
+    });
+  }
+});
+</script>
+
 </body></html>
