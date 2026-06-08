@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Чем заняться - Гедонизм</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c3c8c2",
+                        "on-primary-container": "#96a99b",
+                        "surface-container": "#f0eee8",
+                        "soft-sand": "#E8DCC4",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#ebe8e2",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#eabf92",
+                        "on-tertiary-fixed-variant": "#234c57",
+                        "background": "#fcf9f3",
+                        "on-background": "#1c1c18",
+                        "inverse-on-surface": "#f3f0ea",
+                        "on-tertiary-fixed": "#001f26",
+                        "surface-container-highest": "#e5e2dc",
+                        "on-error": "#ffffff",
+                        "primary-container": "#2d3e33",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dcdad4",
+                        "primary-fixed-dim": "#b8cbbc",
+                        "on-surface": "#1c1c18",
+                        "tertiary-fixed": "#bfe9f6",
+                        "surface-variant": "#e5e2dc",
+                        "primary": "#18281e",
+                        "surface-bright": "#fcf9f3",
+                        "on-secondary-fixed-variant": "#5e411e",
+                        "tertiary-fixed-dim": "#a4cdda",
+                        "surface-container-low": "#f6f3ed",
+                        "warm-wood": "#A67C52",
+                        "surface": "#fcf9f3",
+                        "on-surface-variant": "#434844",
+                        "surface-tint": "#516356",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#0e1f15",
+                        "on-tertiary-container": "#82aab6",
+                        "inverse-primary": "#b8cbbc",
+                        "on-primary-fixed-variant": "#394b3f",
+                        "glamping-olive": "#B1B280",
+                        "on-primary": "#ffffff",
+                        "outline": "#737873",
+                        "forest-deep": "#1B2620",
+                        "primary-fixed": "#d4e7d8",
+                        "secondary": "#795834",
+                        "tertiary": "#002931",
+                        "secondary-fixed": "#ffddbb",
+                        "on-secondary-fixed": "#2b1700",
+                        "on-secondary-container": "#795934",
+                        "river-fresh": "#A9C9D3",
+                        "inverse-surface": "#31312d",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#133f49",
+                        "secondary-container": "#ffd2a4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "section-gap": "120px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Literata"],
+                        "label-lg": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-lg": ["Literata"],
+                        "display-lg-mobile": ["Literata"],
+                        "label-sm": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Literata"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "500"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .glass-panel { background: rgba(252, 249, 243, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.3); }
+        .ambient-shadow { box-shadow: 0 20px 40px -10px rgba(27, 38, 32, 0.06); }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 25px 50px -12px rgba(27, 38, 32, 0.1); }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 dark:bg-background/80 backdrop-blur-md shadow-sm dark:shadow-none transition-all duration-300 relative">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-md text-forest-deep dark:text-primary-fixed-dim shrink-0" href="{{DATA:SCREEN:SCREEN_5}}">Гедонизм</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-surface-variant/70 hover:text-warm-wood transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_113}}">О нас</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-surface-variant/70 hover:text-warm-wood transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_108}}">Проживание</a>
+<a class="font-label-lg text-label-lg text-forest-deep dark:text-primary-fixed-dim border-b-2 border-warm-wood pb-1 hover:text-warm-wood transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_106}}">Чем заняться</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-surface-variant/70 hover:text-warm-wood transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_2}}">FAQ</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-surface-variant/70 hover:text-warm-wood transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_112}}">Контакты</a>
+</div>
+<a class="bg-forest-deep text-on-primary font-label-lg text-label-lg px-6 py-3 rounded-lg hover:bg-forest-deep/90 transition-colors hidden md:inline-block" href="{{DATA:SCREEN:SCREEN_2}}">
+                Забронировать
+            </a>
+<button class="md:hidden text-forest-deep" id="mobile-menu-btn">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-md shadow-lg flex flex-col py-4 px-margin-mobile gap-4 border-t border-surface-variant" id="mobile-menu">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-warm-wood transition-colors" href="{{DATA:SCREEN:SCREEN_113}}">О нас</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-warm-wood transition-colors" href="{{DATA:SCREEN:SCREEN_108}}">Проживание</a>
+<a class="font-label-lg text-label-lg text-forest-deep hover:text-warm-wood transition-colors" href="{{DATA:SCREEN:SCREEN_106}}">Чем заняться</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-warm-wood transition-colors" href="{{DATA:SCREEN:SCREEN_2}}">FAQ</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-warm-wood transition-colors" href="{{DATA:SCREEN:SCREEN_112}}">Контакты</a>
+<a class="bg-forest-deep text-on-primary font-label-lg text-label-lg px-6 py-3 rounded-lg hover:bg-forest-deep/90 transition-colors text-center mt-2" href="{{DATA:SCREEN:SCREEN_2}}">
+        Забронировать
+    </a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[120px] pb-section-gap">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-forest-deep mb-6">Искусство отдыха</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Найдите свой идеальный ритм: от неспешных прогулок на SUP-борде по утренней реке до уютных вечеров с бокалом вина под звуки винила.</p>
+</div>
+</section>
+<!-- Bento Grid: Activities -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px] md:auto-rows-[400px]">
+<!-- SUP Boards (Large) -->
+<div class="md:col-span-2 relative rounded-xl overflow-hidden hover-lift group cursor-pointer ambient-shadow">
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A serene wide-angle shot of a calm river at sunrise, with a person gently paddling on a SUP board. The water reflects the soft pastel colors of the early morning sky, blending light blues, pinks, and warm gold. Lush green trees line the riverbanks in the distance. The overall aesthetic is tranquil, minimalist, and high-end, aligning with a light-mode eco-resort vibe. Soft, diffuse lighting creates a sense of deep peace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEhV5si0X0wvFQtkSUVuDSeY3aj6O4-SXekUDEYn8GH-w0SG2cE0ZWyH26rMqlJT772Qp6MtOoQ7F801N1xeRnxFxwaCFY4jd9w2VGHqTCk8_4x-TVyoY0l9uKB-PCpKO0_eGyZC-EXCCON78x-q92gCPZbIcJ3SjnBq-jfMaTkZHsMREGp5z0B9f91_KwWE1CX2wohVs1wHf5sg45qCYRQ1Z_y8yVW2mS2yifTqRkTczyfdsUIzrbY0-37mecVCgFyUDId5hsGmg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-forest-deep/80 via-forest-deep/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-on-primary">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">surfing</span>
+<span class="font-label-sm text-label-sm bg-river-fresh/20 px-3 py-1 rounded-full backdrop-blur-sm">Вода</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">SUP-борды на рассвете</h3>
+<p class="font-body-md text-body-md opacity-90 max-w-md">Исследуйте тихие заводи реки Сок. Идеально для утренней медитации на воде.</p>
+</div>
+</div>
+<!-- Banya (Tall) -->
+<div class="relative rounded-xl overflow-hidden hover-lift group cursor-pointer ambient-shadow">
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A luxurious, modern sauna interior built with light, warm wood. Through a large, clean glass window, a tranquil forest and river scene is visible. The lighting is soft and golden, emitting from hidden LED strips and natural daylight. A wooden bucket and ladle sit near hot stones. The style is pristine, minimalist, and deeply relaxing, fitting a premium eco-glamping aesthetic in light mode." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDalwxULw9T3fYWhE0dz4lRIOJB6ku9Ifp0nxAGKwkytTJP3wQc1un9BQE1Bg41ZcoVn9IEIjnFJAS1b3PvaUpe4abnIEpe88iSCvyvRocaQ2bDeMY9FfDkIacrVFZdMO6N6wrXXec99o8XGXHLJsg0BlqjmtIdVWFcvxudCWvAJDbYxcUx4bi_CbVFsmTK3Rgp9WUgUt3rVqArzg08BAoZzj7cAgVcVi_7Ht1qoZbAHB_pVcwGzRe4WTrjt4kshTdRpCAL57VYBl4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-forest-deep/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-on-primary">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">hot_tub</span>
+<span class="font-label-sm text-label-sm bg-warm-wood/40 px-3 py-1 rounded-full backdrop-blur-sm">Релакс</span>
+</div>
+<h3 class="font-headline-md text-[24px] leading-[32px] mb-2">Речная баня</h3>
+<p class="font-body-md text-body-md opacity-90">Панорамные окна с видом на лес и ледяная купель.</p>
+</div>
+</div>
+<!-- Hiking -->
+<div class="relative rounded-xl overflow-hidden hover-lift group cursor-pointer ambient-shadow">
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A breathtaking view from a grassy hillside overlooking a wide, winding river valley. The landscape is lush with soft green and golden hues typical of late summer. The scene captures the beauty of nature trails. The lighting is bright and airy, casting soft shadows. The visual style is expansive, clean, and inviting, perfectly suited for a light-mode eco-tourism design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPPvb_64XGDS37Kp5yH2ka0iqUpIE1MRtSLzxV7ce0alqeAI5pPoOo083zsqIYPM7mq_TfuaG3psYtRjvrWo_yTt_PXc8HzDjG3CAG9kntGwtxXxxA_oq6iimWI3vP-4SEaAFhX3wNJz1Y7mMBbnUQo5xnazG7tJ3wx9Etoig_9dNZ7bMhIzZ8ZCVv0aATOdw4yTvmRJMdekn315jy-zaUXqgFSOmkUDj3tkj62WnRL8R3FaLrI1PrpDPb5YM5KEd3mDBjLKorf6Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-forest-deep/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 text-on-primary">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">hiking</span>
+</div>
+<h3 class="font-headline-md text-[24px] leading-[32px] mb-1">Подвальские террасы</h3>
+<p class="font-body-md text-[14px] leading-[20px] opacity-90">Треккинг с потрясающими видами.</p>
+</div>
+</div>
+<!-- Vinyl & Wine -->
+<div class="relative rounded-xl overflow-hidden hover-lift group cursor-pointer ambient-shadow">
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up shot of a vintage vinyl record player spinning on a warm wooden table. Next to it is a crystal clear glass of red wine, catching soft, golden-hour light. The background is softly blurred, showing hints of a cozy, modern interior with natural textures. The mood is intimate, slow-paced, and sophisticated, aligning with a premium, relaxed glamping experience in light mode." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFUV-P7o3UlP44437PzD7riBc3ez3Z0ftOON6B1A04BbO9vNoJcozLMAiOMyoW5B_M8L8G7AkD-8oJ4PqZBo50QpSm5JehFGV_c9KiRmySDjkoB4rpSbUkRrJhhsdo49Mbr0VurM8xH_Gyw51EeMbZfgD-xeNb_TulydVUFtyypgUF2Saoy9gTKzB1s5iV5hBCANgOUYM5agB8MqRL2ZW6c0sdDe0FXKCR8p4XPT7SKR1EodbGVRueB8vWUT4npcXSb36fX-nQOh4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-forest-deep/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 text-on-primary">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">album</span>
+</div>
+<h3 class="font-headline-md text-[24px] leading-[32px] mb-1">Винил и Вино</h3>
+<p class="font-body-md text-[14px] leading-[20px] opacity-90">Уютные вечера в лобби.</p>
+</div>
+</div>
+<!-- BBQ & Stargazing -->
+<div class="relative rounded-xl overflow-hidden hover-lift group cursor-pointer ambient-shadow">
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-end outdoor fire pit area at twilight. Minimalist seating surrounds a modern, smokeless fire bowl. Soft, warm light from the fire illuminates the natural stone and wooden textures around it. The sky above is a deep, clear indigo, just beginning to show stars. The aesthetic is luxurious yet deeply connected to nature, perfectly matching an eco-aesthetic glamping site." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6HgeaAKeERNK3OLsWXf7g2lVApVpEo41SqEapFthHCgXFyzze7CaOv3XpWkWgL5YNocWPPP-eCmYcMQM5EQachS-E2_bnAJVdbOvUBInthCL6DurJZq9Il8EMIBQlflXuQl23kR8NnuHrzKSrh1Fmuqjv_bwxq1lM-HjIxmZ2FpEOLdUqLxDUvSEQT5RftDe0jFC5zIowge2VJmYdHdIWuyjquqt6zWGkT_d4o6fy3S1ZNrOQGZxpfep_rqZTkehquhxJ5jAu1nY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-forest-deep/90 via-forest-deep/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 text-on-primary">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">outdoor_grill</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<h3 class="font-headline-md text-[24px] leading-[32px] mb-1">BBQ и Звезды</h3>
+<p class="font-body-md text-[14px] leading-[20px] opacity-90">Индивидуальные зоны и телескоп.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Equipment Rental & Map Banner -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="bg-surface-container-low rounded-xl p-8 md:p-12 flex flex-col md:flex-row gap-12 items-center ambient-shadow border border-surface-dim/30">
+<div class="flex-1 space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-forest-deep">Прокат инвентаря</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Все необходимое для активного отдыха доступно на территории глэмпинга. Путешествуйте налегке.</p>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-warm-wood" style="font-variation-settings: 'FILL' 0;">pedal_bike</span>
+                            Горные велосипеды (взрослые и детские)
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-warm-wood" style="font-variation-settings: 'FILL' 0;">rowing</span>
+                            Весельные лодки
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-warm-wood" style="font-variation-settings: 'FILL' 0;">sports_tennis</span>
+                            Спортивный инвентарь (бадминтон, мячи)
+                        </li>
+</ul>
+</div>
+<div class="w-full md:w-[400px] rounded-xl overflow-hidden glass-panel p-6 flex flex-col items-center text-center space-y-4">
+<div class="w-16 h-16 bg-river-fresh/20 rounded-full flex items-center justify-center text-forest-deep mb-2">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 0;">map</span>
+</div>
+<h3 class="font-headline-md text-[24px] leading-[32px] text-forest-deep">Интерактивная карта</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Изучите маршруты, зоны отдыха и расположение объектов на территории.</p>
+<button class="w-full border-2 border-warm-wood text-secondary font-label-lg text-label-lg px-6 py-3 rounded-lg hover:bg-warm-wood hover:text-on-primary transition-all duration-300">
+                        Открыть карту
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-primary-container text-forest-deep dark:text-on-primary-container font-body-md text-body-md w-full rounded-t-xl mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-12 gap-gutter max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-md text-forest-deep dark:text-primary-fixed-dim shrink-0 mb-6 md:mb-0" href="{{DATA:SCREEN:SCREEN_5}}">
+                Гедонизм
+            </a>
+<div class="flex flex-wrap justify-center md:justify-end gap-6 md:gap-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-warm-wood underline decoration-transparent hover:decoration-warm-wood transition-all font-label-sm text-label-sm" href="#">Политика конфиденциальности</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-warm-wood underline decoration-transparent hover:decoration-warm-wood transition-all font-label-sm text-label-sm" href="#">Публичная оферта</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-warm-wood underline decoration-transparent hover:decoration-warm-wood transition-all font-label-sm text-label-sm" href="#">Правила проживания</a>
+</div>
+<div class="text-on-surface-variant dark:text-on-surface-variant/80 font-label-sm text-label-sm mt-6 md:mt-0 text-center md:text-right">
+                © 2024 Гедонизм. Эко-эстетика осознанного отдыха на реке Сок.
+            </div>
+</div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
+</script>
+</body></html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Глэмпинг Гедонизм — Искусство отдыха на реке Сок</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400..700&amp;family=Manrope:wght@400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#fcf9f3",
+                      "inverse-on-surface": "#f3f0ea",
+                      "primary-fixed": "#d4e7d8",
+                      "secondary-fixed": "#ffddbb",
+                      "surface-container-low": "#f6f3ed",
+                      "primary-container": "#2d3e33",
+                      "on-primary-container": "#96a99b",
+                      "outline-variant": "#c3c8c2",
+                      "glamping-olive": "#B1B280",
+                      "outline": "#737873",
+                      "on-primary-fixed-variant": "#394b3f",
+                      "surface-bright": "#fcf9f3",
+                      "on-secondary-fixed": "#2b1700",
+                      "tertiary-fixed-dim": "#a4cdda",
+                      "surface": "#fcf9f3",
+                      "primary-fixed-dim": "#b8cbbc",
+                      "surface-dim": "#dcdad4",
+                      "surface-container-high": "#ebe8e2",
+                      "secondary-container": "#ffd2a4",
+                      "forest-deep": "#1B2620",
+                      "error": "#ba1a1a",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-container": "#82aab6",
+                      "on-surface": "#1c1c18",
+                      "on-error-container": "#93000a",
+                      "on-secondary-container": "#795934",
+                      "surface-variant": "#e5e2dc",
+                      "on-secondary-fixed-variant": "#5e411e",
+                      "on-tertiary-fixed": "#001f26",
+                      "tertiary-fixed": "#bfe9f6",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed": "#0e1f15",
+                      "error-container": "#ffdad6",
+                      "inverse-primary": "#b8cbbc",
+                      "on-primary": "#ffffff",
+                      "surface-container-highest": "#e5e2dc",
+                      "primary": "#18281e",
+                      "soft-sand": "#E8DCC4",
+                      "secondary": "#795834",
+                      "on-background": "#1c1c18",
+                      "inverse-surface": "#31312d",
+                      "tertiary": "#002931",
+                      "on-surface-variant": "#434844",
+                      "warm-wood": "#A67C52",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#234c57",
+                      "on-error": "#ffffff",
+                      "tertiary-container": "#133f49",
+                      "surface-container": "#f0eee8",
+                      "river-fresh": "#A9C9D3",
+                      "surface-tint": "#516356",
+                      "secondary-fixed-dim": "#eabf92"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "section-gap": "120px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Literata"
+                      ],
+                      "label-lg": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Manrope"
+                      ],
+                      "display-lg-mobile": [
+                              "Literata"
+                      ],
+                      "body-md": [
+                              "Manrope"
+                      ],
+                      "headline-lg": [
+                              "Literata"
+                      ],
+                      "headline-md": [
+                              "Literata"
+                      ],
+                      "label-sm": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "72px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-lg": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.03em",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #fcf9f3; /* surface */
+            color: #1c1c18; /* on-surface */
+        }
+      </style>
+</head>
+<body class="font-body-md text-body-md antialiased min-h-screen flex flex-col selection:bg-river-fresh selection:text-forest-deep">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 backdrop-blur-md shadow-sm docked full-width top-0 sticky z-50 relative">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-display-lg-mobile md:font-display-lg text-headline-md md:text-headline-md tracking-widest text-forest-deep" href="{{DATA:SCREEN:SCREEN_5}}">
+                ГЕДОНИЗМ
+            </a>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_113}}">О нас</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_108}}">Проживание</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_106}}">Чем заняться</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_2}}">FAQ</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_112}}">Контакты</a>
+</div>
+<a class="bg-forest-deep text-soft-sand font-label-lg text-label-lg px-6 py-3 rounded-lg hover:bg-forest-deep/90 transition-colors hidden md:block" href="{{DATA:SCREEN:SCREEN_2}}">
+                Забронировать
+            </a>
+<button class="md:hidden text-forest-deep p-2" id="mobile-menu-btn">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden absolute top-full left-0 w-full bg-surface shadow-md border-t border-surface-variant flex flex-col items-center py-4 space-y-4 z-40" id="mobile-menu">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_113}}">О нас</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_108}}">Проживание</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_106}}">Чем заняться</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_2}}">FAQ</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_112}}">Контакты</a>
+<a class="bg-forest-deep text-soft-sand font-label-lg text-label-lg px-6 py-3 rounded-lg hover:bg-forest-deep/90 transition-colors block w-3/4 text-center" href="{{DATA:SCREEN:SCREEN_2}}">
+        Забронировать
+    </a>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[921px] flex flex-col justify-center items-center text-center px-margin-mobile md:px-margin-desktop py-section-gap overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-80" data-alt="A breathtaking wide shot of a serene river winding through a dense, lush green forest at sunrise. The soft, golden light reflects off the calm water, creating a peaceful and inviting atmosphere. The overall mood is tranquil and grounding, reflecting a premium glamping experience immersed in nature. The color palette features deep greens, soft golden yellows, and the silvery blue of the river." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9lUx0Mn6rjDnPQdTpb3YI07xgDZ7n4JU_9-mzUFdesAdVw_V-0zbqV4Q7Px_KRn2ZUljknoq9CB8ytzLP-ePxSeQZAAqKhXlch9eQY7yA-iFqO6z5AQhH3jyyER_wWpTIi9Qk7iDM2ZHi0SQIcSLQXKn8Y3-xyUeVTBBczTOujZ-N0J3Gm5IL1Vkl5sETCKXahGo-GF3dSANV619gHBY3AvoEIo2nL9vkxr7A6DdTqnF9OcYii0dpZdx3yyuKE5CuqQsQSYcQbbE"/>
+<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/40 to-surface"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center gap-8">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-forest-deep drop-shadow-sm">
+                    Гедонизм — искусство отдыха на реке Сок
+                </h1>
+<p class="font-body-lg text-body-lg text-forest-deep/90 max-w-2xl bg-surface/40 backdrop-blur-sm p-4 rounded-xl border border-white/20">
+                    Место, где природа встречается с комфортом. Поселок Новый Городок, Самарская область
+                </p>
+<a class="mt-4 bg-forest-deep text-soft-sand font-label-lg text-label-lg px-8 py-4 rounded-xl hover:bg-primary transition-all duration-300 shadow-sm flex items-center gap-2 group" href="{{DATA:SCREEN:SCREEN_108}}">
+                    Выбрать домик
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- About Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap" id="about">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<h2 class="font-headline-lg text-headline-lg text-forest-deep">
+                        Экологичный минимализм
+                    </h2>
+<div class="space-y-4 font-body-lg text-body-lg text-on-surface-variant">
+<p>
+                            Мы создали пространство, где роскошь не кричит, а шепчет. Наш глэмпинг на берегах реки Сок — это манифест осознанного отдыха. Здесь вы найдете тишину, прерываемую лишь пением птиц и легким плеском воды.
+                        </p>
+<p>
+                            Каждая деталь продумана так, чтобы раствориться в окружающем пейзаже, предоставляя вам максимальный комфорт без ущерба для природы. Мы используем натуральные материалы, мягкие текстуры и оставляем много 'воздуха' как в интерьерах, так и в планировке территории.
+                        </p>
+</div>
+</div>
+<div class="relative h-[600px] rounded-2xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A close-up, highly textured shot of a minimalist wooden cabin exterior blending seamlessly with a dense forest background. The light is soft and diffused, highlighting the natural grain of the wood and the vibrant greens of the surrounding leaves. The mood is intimate and calming, emphasizing sustainable design and a connection to the environment. The color palette focuses on warm wood tones and fresh greens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnj_FZq1-SGbLkqK--nY3eeV1P5Y-9WU0wBbqMqauURAF_IKvEtnz82QKiN5ebad4o--gflDJvkRZ0Xt2sOMnQwWuu0aP3_PUHMMhxEAf6fOYXa2u0nUlFamBfbSIFChbPNAN32ruHeq4YEiyt6ftkAK8Jo8MLG2P8Lgf8W4LGs8zbVLLVB6vXb5EUh60NTfG5nyJi57U1tgd3iF7hDMLS-ihRTsoQB9sR661xlckOk32iyZsZIYYKMBMxZWxATPOT0Pmhi1Wp0oU"/>
+</div>
+</div>
+</section>
+<!-- Accommodation Section (Bento Grid Style) -->
+<section class="bg-surface-container-low py-section-gap" id="accommodation">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-16">
+<div class="text-center max-w-2xl mx-auto space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-forest-deep">Проживание</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Выберите свой идеальный формат единения с природой</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- KOTO -->
+<div class="bg-surface rounded-2xl overflow-hidden shadow-sm border border-surface-variant/50 group flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A modern, minimalist A-frame cabin with large panoramic windows reflecting the surrounding forest and a bright sky. The cabin is situated on a wooden deck surrounded by trees. The lighting is bright and airy, suggesting a clear daytime. The style is clean and contemporary glamping. Colors are predominantly neutral whites, warm woods, and natural greens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu_B2Odjlak0rJmmuL59din7MTk1wYqNgqDBDtPv_QhHzRPZexvH_rlCI4bMhFSfhxho5n9wYhd97aGF_VwfefQdAz6E8BGuTMAv9cY67NHKHw3gTaQBZEyO8KUMKqq2nGo2WpXhaLZz3SWGLJr4d7zjyXRoynRlLKKhUky8fDek2U-zgEC834QfXexRVxv76_9fLXm05351PoIKS6K5KulBQdwH3-oS3eJwEgq5fwGU5_0WRYLJ1odM27i8NSLkcdPX4DE3rS4K4"/>
+<div class="absolute top-4 left-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full font-label-sm text-label-sm text-forest-deep uppercase tracking-wider">
+                                Панорамный
+                            </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-forest-deep mb-2">КОТО</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Домики с панорамными окнами для полного погружения.</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-3 text-on-surface-variant text-body-md font-body-md">
+<span class="material-symbols-outlined text-river-fresh" style="font-variation-settings: 'FILL' 0;">wifi</span>
+                                    Wi-Fi
+                                </li>
+<li class="flex items-center gap-3 text-on-surface-variant text-body-md font-body-md">
+<span class="material-symbols-outlined text-river-fresh" style="font-variation-settings: 'FILL' 0;">shower</span>
+                                    Тропический душ
+                                </li>
+<li class="flex items-center gap-3 text-on-surface-variant text-body-md font-body-md">
+<span class="material-symbols-outlined text-river-fresh" style="font-variation-settings: 'FILL' 0;">kitchen</span>
+                                    Мини-кухня
+                                </li>
+</ul>
+<div class="mt-auto pt-6 border-t border-surface-variant flex items-center justify-between">
+<div class="font-label-lg text-label-lg text-forest-deep">от 6 490 ₽ <span class="font-body-sm text-body-sm text-outline font-normal">/ ночь</span></div>
+<a class="bg-forest-deep text-soft-sand px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-primary transition-colors inline-block" href="{{DATA:SCREEN:SCREEN_2}}">
+                                    Забронировать
+                                </a>
+</div>
+</div>
+</div>
+<!-- ALPHA -->
+<div class="bg-surface rounded-2xl overflow-hidden shadow-sm border border-surface-variant/50 group flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A luxurious safari-style glamping tent setup near a calm river. The tent features light canvas walls and a comfortable, well-appointed interior visible through the open flap. The mood is relaxed and premium, with soft, golden hour lighting creating a warm glow. The color palette includes soft sands, canvas whites, and deep river blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClGpBxwNzldHzCtKVMyPe9c3w-_pudaEyBe7CoSQhEBj8yYZkCIFJSuULpfdW6q7JjXghPFDVu_yIuPLBfPmYKEQRiRTSF08c8kMLA84e7zdFgztXYv6IG8qBHpVrcDMoJx_j3vMezJgxm4Pxboljls_YUAKtBpefCnA4-r37vrqzI9WQzQbncgQSAzXe7n3O_0Nsv4tIRfGr7PLW4EcD7OxbrNpTIhsX80ASxqkCtvoJfqtO7Lvr1hLScJe2IL2AwsDPAAL7WpRY"/>
+<div class="absolute top-4 left-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full font-label-sm text-label-sm text-forest-deep uppercase tracking-wider">
+                                Вид на реку
+                            </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-forest-deep mb-2">АЛЬФА</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Комфортные палатки на подиуме с видом на реку.</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-3 text-on-surface-variant text-body-md font-body-md">
+<span class="material-symbols-outlined text-river-fresh" style="font-variation-settings: 'FILL' 0;">bed</span>
+                                    Двуспальная кровать
+                                </li>
+<li class="flex items-center gap-3 text-on-surface-variant text-body-md font-body-md">
+<span class="material-symbols-outlined text-river-fresh" style="font-variation-settings: 'FILL' 0;">deck</span>
+                                    Личная терраса
+                                </li>
+<li class="flex items-center gap-3 text-on-surface-variant text-body-md font-body-md">
+<span class="material-symbols-outlined text-river-fresh" style="font-variation-settings: 'FILL' 0;">bolt</span>
+                                    Электричество
+                                </li>
+</ul>
+<div class="mt-auto pt-6 border-t border-surface-variant flex items-center justify-between">
+<div class="font-label-lg text-label-lg text-forest-deep">от 6 490 ₽ <span class="font-body-sm text-body-sm text-outline font-normal">/ ночь</span></div>
+<a class="bg-forest-deep text-soft-sand px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-primary transition-colors inline-block" href="{{DATA:SCREEN:SCREEN_2}}">
+                                    Забронировать
+                                </a>
+</div>
+</div>
+</div>
+<!-- TIPI -->
+<div class="bg-surface rounded-2xl overflow-hidden shadow-sm border border-surface-variant/50 group flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A cozy, traditional-style tipi tent set in a clearing within a lush forest. A small fire pit is nearby. The lighting is dusky, with string lights creating a magical, intimate atmosphere around the tent. The style is adventurous yet comfortable glamping. The color palette features deep forest greens, warm orange firelight, and soft canvas tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj6kJJr_WfdzECxi8apZRvRpKt4uWt7KFveVscqjNqbvRz4RyM3d6kENfKg2BtVAFLHRIq9fb_c-rqjoOs3bZl3_18sAAPbKgCfCS9TxSTihTaCwm00H4fbvNd98ZU3OKcWRfUA-20EZ5p93SQtryWUX8tpkicAkF5J7oJR1OI949PHC-jOZWpcEiJS820apU5ceXK7zLFpuFKgbMoNVBcrBMc0Lrc1MFn-DFTbAdFZRasCkDcym2o41gRloiKQzxxlvXE_mf-PzI"/>
+<div class="absolute top-4 left-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full font-label-sm text-label-sm text-forest-deep uppercase tracking-wider">
+                                Приключение
+                            </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-forest-deep mb-2">ТИПИ</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Уютные палатки для настоящих искателей приключений.</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-3 text-on-surface-variant text-body-md font-body-md">
+<span class="material-symbols-outlined text-river-fresh" style="font-variation-settings: 'FILL' 0;">local_fire_department</span>
+                                    Зона для костра
+                                </li>
+<li class="flex items-center gap-3 text-on-surface-variant text-body-md font-body-md">
+<span class="material-symbols-outlined text-river-fresh" style="font-variation-settings: 'FILL' 0;">star</span>
+                                    Вид на звезды
+                                </li>
+<li class="flex items-center gap-3 text-on-surface-variant text-body-md font-body-md">
+<span class="material-symbols-outlined text-river-fresh" style="font-variation-settings: 'FILL' 0;">pets</span>
+                                    Можно с питомцами
+                                </li>
+</ul>
+<div class="mt-auto pt-6 border-t border-surface-variant flex items-center justify-between">
+<div class="font-label-lg text-label-lg text-forest-deep">от 6 490 ₽ <span class="font-body-sm text-body-sm text-outline font-normal">/ ночь</span></div>
+<a class="bg-forest-deep text-soft-sand px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-primary transition-colors inline-block" href="{{DATA:SCREEN:SCREEN_2}}">
+                                    Забронировать
+                                </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Activities Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap" id="activities">
+<div class="mb-12 text-center">
+<h2 class="font-headline-lg text-headline-lg text-forest-deep mb-4">Чем заняться</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Наполните свой день впечатлениями или просто наслаждайтесь моментом</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Activity 1 -->
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-river-fresh/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary-container text-3xl" style="font-variation-settings: 'FILL' 1;">surfing</span>
+</div>
+<h3 class="font-headline-sm text-headline-md text-forest-deep mb-3 text-xl">САП-борды</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Исследуйте спокойные воды реки Сок на рассвете.</p>
+</div>
+<!-- Activity 2 -->
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-glamping-olive/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-forest-deep text-3xl" style="font-variation-settings: 'FILL' 1;">hiking</span>
+</div>
+<h3 class="font-headline-sm text-headline-md text-forest-deep mb-3 text-xl">Походы</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Живописные лесные тропы для легких прогулок.</p>
+</div>
+<!-- Activity 3 -->
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed/50 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">hot_tub</span>
+</div>
+<h3 class="font-headline-sm text-headline-md text-forest-deep mb-3 text-xl">Баня у реки</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Панорамная баня с прямым спуском к воде.</p>
+</div>
+<!-- Activity 4 -->
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-surface-variant text-3xl" style="font-variation-settings: 'FILL' 1;">album</span>
+</div>
+<h3 class="font-headline-sm text-headline-md text-forest-deep mb-3 text-xl">Винил &amp; Вино</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Уютные вечера под треск пластинок в общей зоне.</p>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="bg-forest-deep text-soft-sand py-section-gap" id="location">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8 order-2 md:order-1">
+<h2 class="font-headline-lg text-headline-lg text-primary-fixed">Как добраться</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim/90">
+                        Мы находимся вдали от шума, но достаточно близко для комфортной поездки на выходные.
+                    </p>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-river-fresh mt-1" style="font-variation-settings: 'FILL' 0;">directions_car</span>
+<div>
+<h4 class="font-label-lg text-label-lg mb-1">Из Самары</h4>
+<p class="font-body-md text-body-md text-primary-fixed-dim/70">Всего 1 час на автомобиле по живописной трассе. Поселок Новый Городок, Самарская область.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-river-fresh mt-1" style="font-variation-settings: 'FILL' 0;">directions_bus</span>
+<div>
+<h4 class="font-label-lg text-label-lg mb-1">Из Ульяновска</h4>
+<p class="font-body-md text-body-md text-primary-fixed-dim/70">Примерно 2.5 часа. Подробную схему проезда мы высылаем после бронирования.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 h-[400px] rounded-2xl overflow-hidden bg-surface-tint/20 flex items-center justify-center border border-primary-fixed/10">
+<div class="text-center p-8">
+<span class="material-symbols-outlined text-6xl text-river-fresh/50 mb-4" style="font-variation-settings: 'FILL' 0;">map</span>
+<p class="font-body-md text-body-md text-primary-fixed/50">Интерактивная карта скрыта для сохранения минимализма. Точные координаты предоставляются гостям.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-forest-deep full-width mt-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="flex flex-col gap-4">
+<a class="font-display-lg text-headline-md text-soft-sand block" href="{{DATA:SCREEN:SCREEN_5}}">
+                    ГЕДОНИЗМ
+                </a>
+<p class="font-body-md text-body-md text-soft-sand/70">
+                    © 2024 Глэмпинг «Гедонизм». Искусство отдыха на реке Сок.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-soft-sand/70 hover:text-river-fresh transition-colors duration-200" href="#">Политика конфиденциальности</a>
+<a class="font-body-md text-body-md text-soft-sand/70 hover:text-river-fresh transition-colors duration-200" href="#">Публичная оферта</a>
+<a class="font-body-md text-body-md text-soft-sand/70 hover:text-river-fresh transition-colors duration-200" href="#">Правила проживания</a>
+</div>
+<div class="flex flex-col gap-3 md:items-end">
+<a class="font-body-md text-body-md text-soft-sand/70 hover:text-river-fresh transition-colors duration-200" href="{{DATA:SCREEN:SCREEN_112}}">Связаться с нами</a>
+</div>
+</div>
+</footer>
+<script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+</script>
+</body></html>
